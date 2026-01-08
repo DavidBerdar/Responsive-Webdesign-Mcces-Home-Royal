@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mcces Home Royal - Exklusive Möbelkunst</title>
+    <link rel="stylesheet" href="style-royal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.png" alt="Mcces Home Royal Logo">
+                </div>
+                <span>Mcces Home Royal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#kollektionen">Kollektionen</a></li>
+                <li><a href="#exklusiv">Exklusiv</a></li>
+                <li><a href="#handwerk">Handwerk</a></li>
+                <li><a href="#heritage">Heritage</a></li>
+                <li><a href="#neuheiten">Neuheiten</a></li>
+                <li><a href="#beratung">Beratung</a></li>
+            </ul>
+            <div class="nav-icons">
+
+                <a href="#" class="auth-btn">Mitglied werden</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.png" alt="Mcces Home Royal Logo">
+                </div>
+                <span>Mcces Home Royal</span>
+            </div>
+            <button class="close-menu" onclick="toggleMobileMenu()">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#kollektionen" onclick="toggleMobileMenu()">Kollektionen</a></li>
+            <li><a href="#exklusiv" onclick="toggleMobileMenu()">Exklusiv</a></li>
+            <li><a href="#handwerk" onclick="toggleMobileMenu()">Handwerk</a></li>
+            <li><a href="#heritage" onclick="toggleMobileMenu()">Heritage</a></li>
+            <li><a href="#neuheiten" onclick="toggleMobileMenu()">Neuheiten</a></li>
+            <li><a href="#beratung" onclick="toggleMobileMenu()">Beratung</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Die Königliche Kollektion – Zeitlose Eleganz</h1>
+                <p>Entdecken Sie die erlesene Kunst des königlichen Wohnens. Unsere Royal Collection vereint jahrhundertealtes Handwerk mit modernem Luxus. Jedes Möbelstück wird in unserer Manufaktur mit höchster Präzision gefertigt und verleiht Ihrem Zuhause aristokratischen Glanz.</p>
+                <button class="cta-btn">Kollektion entdecken</button>
+                
+                <!-- Carousel Dots unter dem Text -->
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="changeDot(0)"></span>
+                    <span class="dot" onclick="changeDot(1)"></span>
+                    <span class="dot" onclick="changeDot(2)"></span>
+                    <span class="dot" onclick="changeDot(3)"></span>
+                    <span class="dot" onclick="changeDot(4)"></span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-carousel">
+                    <!-- HERO BILDER - 5 Bilder für Carousel -->
+                    <img src="images/hero-sofa.png" alt="Royal Collection" class="carousel-image active">
+                    <img src="images/hero-bild2.png" alt="Exklusive Möbel" class="carousel-image">
+                    <img src="images/hero-bild3.png" alt="Luxus Interior" class="carousel-image">
+                    <img src="images/hero-bild4.png" alt="Edle Einrichtung" class="carousel-image">
+                    <img src="images/hero-bild5.png" alt="Königliches Design" class="carousel-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excellence Section -->
+    <section class="sustainability-section">
+        <div class="sustainability-container">
+            <div class="sustainability-header">
+                <h2>Exzellenz in jeder Faser</h2>
+                <p>Unsere Möbel stehen für höchste Qualität, edles Handwerk und zeitlose Perfektion – Made in Europe.</p>
+            </div>
+            
+            <div class="sustainability-grid">
+                <div class="sustainability-card">
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-holz.png" alt="Edelholz Auswahl">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Erlesenes Edelholz</h3>
+                        <p>Nur die feinsten Hölzer finden Eingang in unsere Manufaktur. Mahagoni, Nussbaum und Eiche werden von Meisterhand ausgewählt und über Monate luftgetrocknet, um ihre natürliche Schönheit zu entfalten und Jahrhunderte zu überdauern.</p>
+                    </div>
+                </div>
+
+                <div class="sustainability-card">
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-recycling.png" alt="Luxuriöse Stoffe">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Luxuriöse Stoffe</h3>
+                        <p>Italienische Seide, französischer Samt und britisches Leder – unsere Textilien stammen von den renommiertesten Webereien Europas. Jeder Stoff wird handverlesen und vereint königlichen Komfort mit außergewöhnlicher Haltbarkeit.</p>
+                    </div>
+                </div>
+
+                <div class="sustainability-card">
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-lieferung.png" alt="Manufaktur Handwerk">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Manufaktur-Handwerk</h3>
+                        <p>In unserer Manufaktur erschaffen Meister ihres Fachs seit Generationen Möbelkunst. Jedes Stück entsteht in tagelanger Handarbeit, mit Techniken die seit dem 18. Jahrhundert perfektioniert wurden – für Qualität über Generationen.</p>
+                    </div>
+                </div>
+
+                <div class="sustainability-card">
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-handwerk.png" alt="Lebenslange Garantie">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Lebenslange Garantie</h3>
+                        <p>Ein Möbelstück von Mcces Home Royal ist eine Investition für Generationen. Wir bieten lebenslange Garantie auf alle Konstruktionen und kostenlosen Restaurierungsservice – denn wahre Qualität kennt keine Ablaufdaten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sustainability-stats">
+                <div class="stat">
+                    <span class="stat-number">1847</span>
+                    <span class="stat-label">Gründungsjahr</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Handgefertigt</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Luxus-Rating</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Jahre Garantie</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Signature Pieces</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/eichenholz-tisch.png" alt="Königlicher Beistelltisch">
+                </div>
+                <div class="product-info">
+                    <h3>Royal Oak Beistelltisch</h3>
+                    <p>Gefertigt aus 200 Jahre alter Eiche, verbindet dieser majestätische Beistelltisch klassische Eleganz mit zeitgemäßer Funktionalität. Goldene Intarsien und handpolierte Oberflächen machen jedes Exemplar zum Unikat voller aristokratischer Anmut.</p>
+                    <div class="product-actions">
+                        <button class="btn-secondary">Details</button>
+                        <button class="btn-cart">Zur Auswahl</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/sofakissen-set.png" alt="Samt-Kissen Set">
+                </div>
+                <div class="product-info">
+                    <h3>Samt-Kissen Royal Edition</h3>
+                    <p>Unsere exklusive Royal Edition vereint französischen Lyon-Samt mit goldgestickten Monogrammen. Die königliche Farbpalette aus Burgunder, Saphir und Smaragd verleiht jedem Raum einen Hauch von Versailles. Limitierte Jahreskollektion.</p>
+                    <div class="product-actions">
+                        <button class="btn-secondary">Details</button>
+                        <button class="btn-cart">Zur Auswahl</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/senfsofa-sessel.png" alt="Chesterfield Ensemble">
+                </div>
+                <div class="product-info">
+                    <h3>Chesterfield Royal Ensemble</h3>
+                    <p>Das Chesterfield Ensemble ist die Quintessenz britischer Möbelkunst. Vollleder aus schottischen Highlands, handgenagelter Rahmen aus Mahagoni und Kapitonierung nach alter Schule – ein Thron für Ihr Wohnzimmer, der Jahrhunderte überdauert.</p>
+                    <div class="product-actions">
+                        <button class="btn-secondary">Details</button>
+                        <button class="btn-cart">Zur Auswahl</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exklusive Kollektionen</h2>
+        <div class="collections-grid">
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion1.png" alt="Palace Collection">
+                </div>
+                <div class="collection-info">
+                    <h3>The Palace Collection</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Samt</span>
+                        <span class="tag">Mahagoni</span>
+                        <span class="tag">Gold</span>
+                    </div>
+                    <button class="cta-btn">Kollektion ansehen</button>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion2.png" alt="Windsor Heritage">
+                </div>
+                <div class="collection-info">
+                    <h3>Windsor Heritage Kollektion</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Leder</span>
+                        <span class="tag">Eiche</span>
+                        <span class="tag">Klassisch</span>
+                        <span class="tag">Limitiert</span>
+                    </div>
+                    <button class="cta-btn">Kollektion ansehen</button>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion3.png" alt="Versailles Édition">
+                </div>
+                <div class="collection-info">
+                    <h3>Versailles Édition Spéciale</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Barock</span>
+                        <span class="tag">Seide</span>
+                        <span class="tag">Vergoldet</span>
+                        <span class="tag">Prestige</span>
+                    </div>
+                    <button class="cta-btn">Kollektion ansehen</button>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion4.png" alt="English Manor">
+                </div>
+                <div class="collection-info">
+                    <h3>English Manor Kollektion</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Chesterfield</span>
+                        <span class="tag">Nussbaum</span>
+                        <span class="tag">Tweed</span>
+                        <span class="tag">Heritage</span>
+                    </div>
+                    <button class="cta-btn">Kollektion ansehen</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="images/logo.png" alt="Mcces Home Royal Logo">
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Entdecken</h4>
+                <ul>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Showrooms</a></li>
+                    <li><a href="#">Heritage</a></li>
+                    <li><a href="#">Manufaktur-Tour</a></li>
+                    <li><a href="#">Standorte</a></li>
+                    <li><a href="#">Beratungstermin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Service</h4>
+                <ul>
+                    <li><a href="#">Kollektionen</a></li>
+                    <li><a href="#">Maßanfertigung</a></li>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Concierge Service</a></li>
+                    <li><a href="#">Restaurierung</a></li>
+                    <li><a href="#">Mitgliedschaft</a></li>
+                    <li><a href="#">Lieferung</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Kundenbereich</h4>
+                <ul>
+                    <li><a href="#">Magazin</a></li>
+                    <li><a href="#">Katalog</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 1847-2024 Mcces Home Royal. Seit über 175 Jahren Möbelkunst auf höchstem Niveau.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
